@@ -1,0 +1,45 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Wireless Bluetooth Headphones",
+      "price": 49.99,
+      "category": "Electronics",
+      "description": "Over-ear headphones with 30h battery life, noise cancellation, and foldable design.",
+      "in_stock": true
+    },
+    {
+      "id": 2,
+      "name": "USB-C Charging Cable (2m)",
+      "price": 9.99,
+      "category": "Accessories",
+      "description": "Braided nylon USB-C to USB-C cable, supports fast charging up to 60W.",
+      "in_stock": true
+    },
+    {
+      "id": 3,
+      "name": "Mechanical Keyboard",
+      "price": 89.99,
+      "category": "Electronics",
+      "description": "TKL layout, blue switches, RGB backlight, compatible with Windows and Mac.",
+      "in_stock": false
+    },
+    {
+      "id": 4,
+      "name": "Laptop Stand (Adjustable)",
+      "price": 34.99,
+      "category": "Accessories",
+      "description": "Aluminum adjustable laptop stand, fits laptops 10–17 inches.",
+      "in_stock": true
+    },
+    {
+      "id": 5,
+      "name": "Wireless Mouse",
+      "price": 24.99,
+      "category": "Electronics",
+      "description": "Ergonomic wireless mouse with 2.4GHz receiver, DPI up to 1600, 12-month battery.",
+      "in_stock": true
+    }
+  ],
+  "last_updated": "2026-03-10T00:00:00"
+}
