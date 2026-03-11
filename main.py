@@ -5,6 +5,7 @@ from telegram.ext import Application, MessageHandler, filters, ContextTypes
 from dotenv import load_dotenv
 from llm import ask_llm
 from products import load_products
+from admin import build_admin_handlers
 
 load_dotenv()
 
@@ -64,6 +65,10 @@ def main():
         raise ValueError("TELEGRAM_TOKEN not set in .env")
 
     app = Application.builder().token(token).build()
+
+    for handler in build_admin_handlers():
+        app.add_handler(handler)
+
     app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
 
     logger.info("Bot is running. Press Ctrl+C to stop.")
