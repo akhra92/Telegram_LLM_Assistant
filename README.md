@@ -5,7 +5,7 @@ A Telegram bot that answers customer questions about your product catalog using 
 ## Features
 
 - Answers customer questions about products: prices, availability, descriptions, categories
-- Powered by Qwen 2.5 (7B) running locally via Ollama — no API key required
+- Powered by Qwen 3 (8B) running locally via Ollama — no API key required
 - Works in private chats and group chats (mention the bot to trigger it in groups)
 - Admin commands to add, edit, and delete products directly from Telegram
 - Shows a typing indicator while generating a response
@@ -43,10 +43,10 @@ A Telegram bot that answers customer questions about your product catalog using 
 Install **Ollama** from [ollama.com](https://ollama.com), then pull the Qwen model:
 
 ```bash
-ollama pull qwen2.5:7b
+ollama pull qwen3:8b
 ```
 
-> Qwen 2.5 7B is ~4.7 GB. For a lighter option use `qwen2.5:3b`; for better quality use `qwen2.5:14b`. Change the model name in `llm.py` if needed.
+> Qwen 3 8B is ~5.2 GB. For a lighter option use `qwen3:4b`; for better quality use `qwen3:14b`. Change the model name in `llm.py` if needed.
 
 ### 4. Install Python dependencies
 
